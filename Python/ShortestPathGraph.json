@@ -1,0 +1,66 @@
+{
+    "nodes":[
+        {
+            "node_id":"A",
+            "name":"A",
+            "edges":[                
+                {"node_id":"B", "distance":4},
+                {"node_id":"H", "distance":8}
+            ]
+        },
+        {
+            "node_id":"B",
+            "name":"B",
+            "edges":[                
+                {"node_id":"C", "distance":8},
+                {"node_id":"H", "distance":11}
+            ]
+        },
+        {
+            "node_id":"C",
+            "name":"C",
+            "edges":[                
+                {"node_id":"D", "distance":7},
+                {"node_id":"F", "distance":4},
+                {"node_id":"I", "distance":2}
+            ]
+        },
+        {
+            "node_id":"D",
+            "name":"D",
+            "edges":[                
+                {"node_id":"E", "distance":4},
+                {"node_id":"F", "distance":14}
+            ]
+        },
+        {
+            "node_id":"E",
+            "name":"E",
+            "edges":[
+                {"node_id":"F", "distance":10}
+            ]
+        },
+        {
+            "node_id":"F",
+            "name":"F",
+            "edges":[
+                {"node_id":"G", "distance":2}
+            ]
+        },
+        {
+            "node_id":"G",
+            "name":"G",
+            "edges":[
+                {"node_id":"H", "distance":1},
+                {"node_id":"I", "distance":6}
+            ]
+        },
+        {
+            "node_id":"H",
+            "name":"H",
+            "edges":[ 
+                {"node_id":"I", "distance":7}
+            ]
+        }
+    ]
+}
