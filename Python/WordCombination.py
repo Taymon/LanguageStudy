@@ -1,19 +1,19 @@
-def process(originals, point_words, result):
+def process(originals, point_words, results):
     without_pw = [w for w in originals if w not in point_words]
     
     for wp in without_pw:
         clone_pw = point_words[:]
         clone_pw.append(wp)
-        result.append(clone_pw)
-        process(originals, clone_pw, result)
+        results.append(clone_pw)
+        process(originals, clone_pw, results)
 
 def start(words):
-    result = []
+    results = []
 
     for w in words:
-        process(words, [w], result)
+        process(words, [w], results)
 
-    for r in result:
+    for r in results:
         print (r)
 
 
